@@ -6,6 +6,14 @@
 <title>車牌產生器</title>
 <script type="text/javascript" src="./files/jquery-1.6.1.js"></script>
 <script type="text/javascript" src="./files/jquery.bigcolorpicker.js"></script>
+<style type="text/css">
+	@font-face {
+  font-family: 'California';
+  src: url('./Fonts/dealerplate california.woff') format("woff"),
+         url('./Fonts/dealerplate california.ttf') format("truetype"),
+         url('./Fonts/dealerplate california.eot') format("embedded-opentype");
+}
+	</style>
 <script type="text/javascript">
 		$(function(){
 			$(":input[f='bnn']").bigColorpicker(function(el,color){
@@ -177,7 +185,7 @@ form { margin-top:10px;}
 <div class="style1"><ul>
 	 <li><span class="mz">字體</span> 
 	 <select name="fonts" id="fonts" onchange="tijiao();">
-<option value="lt.ttf">1.书体坊兰亭体</option>
+<option value="lt.ttf">1.California</option>
 <option value="m2a.ttf" selected="selected">2.书法颜体</option>
 <option value="m3.ttf">3.毛笔狂草</option>
 <option value="m4.ttf">4.李旭科草书</option>
