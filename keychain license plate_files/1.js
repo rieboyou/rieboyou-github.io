@@ -1,3 +1,0 @@
-document.writeln("<p style=\' margin-bottom:10px;\'><img src=\'http://www.akuziti.com/tu/q.gif\' border=\'0\'></p>");
-document.writeln("<p style=\' margin-bottom:10px;\'><a href=\'https://ibaotu.com/tupian/ziti/1-1-0-0-0-0-c0-1.html?format_type=0&mrltype=0&spm=akye\' target=\'_blank\'><img src=\'http://www.akuziti.com/tu/i3.jpg\' border=\'0\'></a></p>");
-document.writeln("<p style=\' margin-bottom:10px;\'><a href=\'https://ibaotu.com/tupian/ziti/1-1-0-0-0-0-c0-1.html?format_type=0&mrltype=0&spm=akye\' target=\'_blank\'><img src=\'http://www.akuziti.com/tu/i4.gif\' border=\'0\'></a></p>");
