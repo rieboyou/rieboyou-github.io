@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://www.akuziti.com/mb/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+<title>毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换</title>
+<script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/jquery-1.6.1.js"></script>
+<script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/jquery.bigcolorpicker.js"></script>
+<script type="text/javascript">
+		$(function(){
+			$(":input[f='bnn']").bigColorpicker(function(el,color){
+				$("#" + $(el).attr("data-target"))
+				             .val(color);
+			});
+			
+			$("#f333").bigColorpicker("f3","L",9);
+		});
+	</script>
+<script type="text/javascript">
+function tijiao(){
+var bn1=document.getElementById('bn1').value;
+var bn2=document.getElementById('bn2').value;
+if(bn1==bn2){alert("两种颜色一样，这样会生成一张纯色图，请改变其中一个颜色再试！");return false;}
+document.form1.submit();	
+
+}
+function changeColor(newColor,id)
+{
+document.getElementById(id).style.background=newColor;
+}
+function changeColors()
+{
+document.getElementById('bn1').style.background=document.getElementById('bn1').value;
+document.getElementById('bn2').style.background=document.getElementById('bn2').value;
+}
+</script>
+<script type="text/javascript">
+function save(){  
+var img = document.getElementById("showImg");  
+var oPop = window.open(img.src,"","width=1,height=1,top=5000,left=5000");  
+for(;   oPop.document.readyState   !=   "complete";   ){       
+if   (oPop.document.readyState   ==   "complete")break;    
+}  
+oPop.document.execCommand("SaveAs");  
+oPop.close();  
+} 
+</script>
+<script type="text/javascript">
+function tijiao(){
+var bn1=document.getElementById('bn1');
+var bn2=document.getElementById('bn2');
+if(bn1.value=="#FFFFFF" && bn2.value=="#FFFFFF"){bn1.value="#F0F0F0";}
+document.form1.submit();	
+}
+</script>
+<script type="text/javascript">
+$(function(){
+	$(":input[f='bn']").bigColorpicker(function(el,color){
+$("#" + $(el).attr("data-target"))
+	   .val(color);
+	});
+	
+	$("#f333").bigColorpicker("f3","L",9);
+	//配色方案 色块
+    $("#styleOption dt").click(function(){
+		$("#bn2").val($(this).attr("data-color"));
+		$("#bn1").val($(this).attr("data-background-color"));
+		$(".submit").click();
+	});
+	});
+	</script>
+	<style type="text/css">
+*{margin:0;padding:0;}
+body {margin:0 auto;font-family:"Microsoft YaHei", "黑体","宋体", "Arial", "Helvetica", "sans-serif"; font-size:14px; background-color:#f2f2f2;}
+a { color:#000; text-decoration:none;}
+#styleOption dl dt {margin:5px;float:left; list-style:none; cursor:pointer;}
+.bigpicker { width:227px; height:163px; position: absolute; z-index: 9999; background-color: #F0F0F0; padding: 2px 0 1px 5px; border-left: solid 1px #CCCCCC; border-top: solid 1px #CCCCCC; border-right: solid 1px #565656; border-bottom: solid 1px #565656; display: none; }
+.bigpicker-sections-color { margin: 0; padding: 0; }
+.bigpicker-sections-color ul { margin: 0; padding: 0; float: left; }
+.bigpicker-sections-color ul li { list-style: none outside none; margin: 0; padding: 0; border-top:solid 1px #000000; border-left:solid 1px #000000; width:10px; height: 10px; overflow:hidden; line-height:0px; font-size:0px; }
+.bigpicker .biglayout { width:10px; height:10px; border:solid 1px #FFFFFF; position: absolute; z-index: 10000; display: none; line-height: 10px; overflow: hidden; cursor: default; }
+.bigpicker-bgview-text { margin: 0; padding: 0; height: 24px; }
+.bigpicker-bgview-text li { padding: 0 5px 0 0; list-style: none outside none; float: left; line-height:18px; }
+.bigpicker-bgview-text li div { margin: 0; padding: 0; height: 20px; width: 55px; background-color: #000000; border-left: solid 1px #CCCCCC; border-top: solid 1px #CCCCCC; border-right: solid 1px #2B2B2B; border-bottom: solid 1px #2B2B2B; }
+.bigpicker-bgview-text li input { margin: 0; padding: 0; height: 17px; width: 55px; }
+.bigpicker-bgimage { background-image:url(images/big_bgcolor.jpg); }
+.bn{width:65px; height:16px;}
+#showImg{background:url(/images/tmbg.jpg) repeat;}
+.mz {display:none;} 
+.top { background-color:#000000; padding:15px 0;}
+.nav { width:1120px; margin:0 auto;}
+.nav a { color:#999; padding:0 10px; font-size:16px;}
+.main { width:1120px; margin:10px auto;}
+.left { width:730px; background-color:#FFFFFF; padding:20px 40px; float:left;}
+.right { width:300px; float:left; margin-left:10px;}
+h1 { font-size:20px; padding-bottom:10px;}
+.b1 { margin:30px 0 10px 0; font-size:16px;}
+.s1 { margin:10px 0 15px 0; text-align:center;}
+.s2 { margin:15px 0; text-align:center;}
+.sc img { border:1px #ddd solid;height: auto;max-width: 100%;}
+form {width:96%; padding:20px 2%; background-color:#ebebeb; margin:0 auto;}
+textarea { width:100%; font-size:14px; height:100px; padding:5px 0;overflow-x:hidden;border:1px #cccccc solid;text-indent:10px; margin-top:10px;}
+select { font-size:14px; padding:2px;}
+.style1 {text-align:center; margin-top:10px;}
+.style1 ul li { float:left; margin:5px;}
+li {list-style-type:none;}
+.submit { padding:2px;}
+.wx {display:none;}
+.fenlei ul li { border:1px #ddd solid; padding:20px 18px; margin:1px 1px;float:left;list-style-type:none; text-align:center;}
+.fenlei img {cursor:pointer; max-width:100%;}
+.fenlei1 ul li { border:1px #ddd solid; padding:0 0 10px 0; margin:0 34px 5px 0;float:left;list-style-type:none; text-align:center;}
+.fenlei1 img {cursor:pointer; max-width:100%; margin-bottom:5px;}
+.info { background-color:#f5f5f5; padding:2%; margin:10px 0; width:96%; line-height:180%;text-indent:30px;}
+.links { width:95%; margin:0 auto;}
+.links p a { line-height:180%; color:#0000cc;}
+.bottom {text-align:center; margin:20px auto; font-size:13px; padding-bottom:20px;}
+.bottom a { margin:0 5px;}
+@media(max-width:1081px)
+{
+.fenlei ul li { width:100%; margin: 1px 0; padding:30px 0;}
+.style1 ul li { width:96%; text-align:left;}
+.fenlei1 ul li { width:100%; margin: 1px 0; padding:0 0 10px 0;}
+.style11 ul li { width:96%; text-align:left;}
+form { margin-top:10px;}
+.nav { width:98%;}
+.main { width:100%;}
+.left { width:96%; margin:0 auto; padding:10px 1%; float:none;}
+.wx {display:block;margin:5px auto; text-align:center;}
+.mz { display:inline;}
+.right {display:none;}
+.s1 {display:none;}
+.s2 {display:none;}
+}
+</style>	
+</head>
+<body onload="changeColors();" style="">
+<div class="top"><div class="nav">
+<a href="http://www.akuziti.com/">艺术字</a>
+<a href="http://www.akuziti.com/mb/">毛笔字</a>
+<a href="http://www.akuziti.com/yw/">英文字体</a>
+<a href="http://www.akuziti.com/mb/yst.php" target="_blank">印刷体毛笔字</a> 
+<a href="http://www.akuziti.com/mb/tyz.php" target="_blank">田英章毛笔字体</a> 
+<a href="http://www.akuziti.com/mb/ltt.php" target="_blank">兰亭毛笔书法字体</a>
+<a href="http://www.akuziti.com/mb/ltjx.php" target="_blank">兰亭集序书法字体</a>
+</div></div>
+<div class="wx"><script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/m11.js"></script><p style=" margin-bottom:10px;"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/wx.gif" border="0"></p>
+</div>
+<div class="main">
+<div class="left">
+<h1>毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换</h1>
+<div class="s1"><script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/3.js"></script><a href="https://ibaotu.com/tupian/yishuzi/6-0-0-0-0-1-c0-1.html?format_type=0&amp;spm=study163" target="_blank"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/ibao.gif" border="0"></a>
+</div>
+<div class="sc"><img id="showImg" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/169587957977405.png"></div>
+<div class="s2"><script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/4.js"></script><p style=" margin-bottom:10px;"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/qm.gif" border="0"></p>
+</div>
+<form name="form1" id="form1" method="post">
+<div id="styleOption">  <dl>
+    <dt data-color="#FF7E00" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/1.gif"></dt>
+    <dt data-color="#04913B" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/2.gif"></dt>
+    <dt data-color="#FFFF08" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/3.gif"></dt>
+    <dt data-color="#02ABE9" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/4.gif"></dt>
+    <dt data-color="#FBCEE5" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/5.gif"></dt>
+    <dt data-color="#FFCC00" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/6.gif"></dt>
+    <dt data-color="#87CA6D" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/7.gif"></dt>
+    <dt data-color="#F14FBA" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/8.gif"></dt>
+    <dt data-color="#FE0000" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/9.gif"></dt>
+    <dt data-color="#AFFD88" data-background-color="#000000"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/14.gif"></dt>
+    <dt data-color="#FFCC00" data-background-color="#373737"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/15.gif"></dt>
+    <dt data-color="#ffffff" data-background-color="#373737"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/16.gif"></dt>
+    <dt data-color="#ffffff" data-background-color="#FF375B"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/10.gif"></dt>
+    <dt data-color="#ffffff" data-background-color="#FD7F00"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/11.gif"></dt>
+    <dt data-color="#F5EE1F" data-background-color="#D6167D"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/12.gif"></dt>
+    <dt data-color="#FAAF00" data-background-color="#9F1C03"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/13.gif"></dt>
+    <dt data-color="#ffffff" data-background-color="#C06D77"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/17.gif"></dt>
+  </dl></div><div style="clear:both"></div>
+<textarea name="word" id="word" onfocus="if (value ==&#39;请先输入文字！&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;请先输入文字！&#39;}">BAV-1707</textarea>
+<div class="style1"><ul>
+	 <li><span class="mz">字体</span> 
+	 <select name="fonts" id="fonts" onchange="tijiao();">
+<option value="lt.ttf">1.书体坊兰亭体</option>
+<option value="m2a.ttf" selected="selected">2.书法颜体</option>
+<option value="m3.ttf">3.毛笔狂草</option>
+<option value="m4.ttf">4.李旭科草书</option>
+<option value="m5.ttf">5.启笛体</option>
+<option value="m6.ttf">6.彦晨清酒</option>
+<option value="m7.ttf">7.汉仪雪君</option>
+<option value="m8.ttf">8.博洋楷书</option>
+<option value="m9.ttf">9.毛笔草书</option>
+<option value="m10.ttf">10.潮字社曾玉波楚风</option>
+<option value="m11.ttf">11.曾正国行楷</option>
+<option value="m1.ttf">12.柳功权柳体</option>
+<option value="m13.ttf">13.邱氏瘦金书</option>
+<option value="m14.ttf">14.毛笔字楷书</option>
+<option value="m15.ttf">15.良怀行书</option>
+<option value="m16.ttf">16.铁山楷书</option>
+<option value="m17.ttf">17.行书书法</option>
+<option value="74.ttf">18.中山行书字体</option>
+<option value="m21.ttf">19.蔡云汉行书书法</option>
+<option value="m22.ttf">20.蔡云汉清叶书法</option>
+<option value="m23.ttf">21.蔡云汉清悠书法</option>
+<option value="m24.ttf">22.山魂毛笔字田字格</option>
+<option value="m25.ttf">23.韩绍杰邯郸体</option>
+<option value="m26.ttf">24.华文行楷</option>
+<option value="m27.ttf">25.启体</option>
+<option value="m28.ttf">26.毛泽东书法</option>
+<option value="m29.ttf">27.书体坊禚效锋行草体</option>
+<option value="m30.ttf">28.向佳红毛笔行书</option>
+<option value="72.ttf">29.邓小平手写书法</option>
+<option value="73.ttf">30.于右任书法</option>
+<option value="m33.ttf">31.钟齐李洤标准草书</option>
+<option value="m34.ttf">32.钟齐王庆华</option>
+<option value="m35.ttf">33.钟齐志莽行书</option>
+<option value="m36.ttf">34.潮字社时光简</option>
+<option value="m37.ttf">35.段宁毛笔行书</option>
+<option value="70.ttf">36.蔡云汉天真娃娃</option>
+<option value="71.ttf">37.舒同毛笔字体</option>
+<option value="f3.ttf">38.禹卫书法隶书</option>
+<option value="f4.otf">39.赵孟頫毛笔楷书</option>
+<option value="61.ttf">40.米芾体</option>
+<option value="62.ttf">41.刘书锋太极体</option>
+<option value="63.ttf">42.四海行书</option>
+<option value="64.ttf">43.苏新诗毛糙体</option>
+<option value="66.ttf">44.汉仪星宇体</option>
+<option value="67.ttf">45.潇洒隶书</option>
+<option value="68.ttf">46.吕建德</option>
+<option value="69.ttf">47.钟齐翰墨</option>
+<option value="brxs.ttf">48.逐浪报人行书书法</option>
+<option value="fyzt.ttf">49.范文强燕赵体</option>
+<option value="a111.ttf">50.长江毛笔行书</option>
+<option value="a112.ttf">51.刘鑫标毛笔体</option>
+<option value="a113.ttf">52.潮字社杨肖清书简</option>
+<option value="a114.ttf">53.汉仪二码墨书</option>
+<option value="a115.ttf">54.尚魏手书体</option>
+<option value="a116.ttf">55.张乃仁毛笔行书</option>
+<option value="a117.ttf">56.写意水墨</option>
+<option value="a118.ttf">57.黄庭坚书法</option>
+<option value="a119.ttf">58.电影海报字体</option>
+<option value="a120.ttf">59.建刚楚楷简</option>
+<option value="b111.ttf">60.汉仪苏泽立行楷</option>
+<option value="b112.ttf">61.圆润露锋芒</option>
+<option value="b113.ttf">62.李太平根隶书</option>
+<option value="b114.ttf">63.学贞简帛体</option>
+<option value="b115.ttf">64.颜世举隶书</option>
+<option value="b116.ttf">65.张士超魏碑</option>
+<option value="b120.ttf">66.汉仪毛笔隶书繁</option>
+<option value="b121.ttf">67.汉仪毛笔字清茶体</option>
+<option value="b122.ttf">68.汉仪趣报书法字</option>
+<option value="b123.ttf">69.汉仪尚巍流云书法体</option>
+<option value="b124.ttf">70.汉仪孙万民毛笔草书</option>
+<option value="b125.ttf">71.默陌老屋手迹</option>
+<option value="b126.ttf">72.默陌山魂手迹</option>
+<option value="b127.ttf">73.腾祥伯当毛笔字行书</option>
+<option value="b130.ttf">74.北方行书书法字体</option>
+<option value="b131.ttf">75.禅意雪松体毛笔字</option>
+<option value="b132.ttf">76.潮字社曾玉波手书</option>
+<option value="b133.ttf">77.潮字社鲲鹏飞白体</option>
+<option value="b134.ttf">78.潮字社小石飞白书法体</option>
+<option value="b135.ttf">79.汉仪秦川飞影</option>
+<option value="b136.ttf">80.汉仪尚巍卡通毛笔字</option>
+<option value="b137.ttf">81.汉仪唐美人</option>
+<option value="b138.ttf">82.汉仪新蒂唐朝体</option>
+<option value="b139.ttf">83.龙书书法体势如破竹</option>
+<option value="b140.ttf">84.默陌绿妖毛笔风</option>
+<option value="b141.ttf">85.默陌雅诗手迹</option>
+<option value="b142.ttf">86.天空之城毛笔书法</option>
+<option value="b143.ttf">87.站酷妙典和风体</option>
+<option value="b144.ttf">88.字悦毛笔隶书</option>
+<option value="b145.ttf">89.王世呈毛笔行书</option>
+</select></li>
+     <li><span class="mz">大小</span>
+	  <select name="sizes" onchange="tijiao();">
+	<option value="60" selected="selected">60像素</option>
+	<option value="20">20像素</option>
+	<option value="30">30像素</option>
+	<option value="40">40像素</option>
+	<option value="80">80像素</option>
+	<option value="100">100像素</option>
+	<option value="150">150像素</option>
+	<option value="200">200像素</option>
+	<option value="400">400像素</option>
+        </select></li>
+          <li>颜色
+          <input f="bnn" data-target="bn2" name="fontcolor" class="bn" type="text" id="bn2" value="#ffffff" onblur="tijiao();" style="background: rgb(255, 255, 255);">
+          </li>
+          <li>背景
+          <input f="bnn" data-target="bn1" name="colors" class="bn" type="text" id="bn1" value="#373737" onblur="tijiao();" style="background: rgb(55, 55, 55);">
+          </li>
+          <li>透明?
+          <input name="touming" type="checkbox" id="touming" onclick="tijiao();">
+          </li>
+		  <li><input type="submit" class="submit" value="开始转换"></li>
+		  </ul>
+		  </div><div style="clear:both"></div>
+</form>
+<div class="b1">书法家字体/点图片快速生成</div>
+<div class="fenlei">
+<ul>  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/8(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m28.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r1.gif" title="毛泽东书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m28.ttf&#39;;document.form1.submit();"><p>毛泽东书法</p></td></tr></tbody></table></li>
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/2(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;72.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r2.gif" title="邓小平手写书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;72.ttf&#39;;document.form1.submit();"><p>邓小平手写体</p></td></tr></tbody></table></li>   
+			  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/4(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;74.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r3.gif" title="中山行书字体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;74.ttf&#39;;document.form1.submit();"><p>中山行书字体</p></td></tr></tbody></table></li>		
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/5(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m1.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r4.gif" title="柳功权柳体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m1.ttf&#39;;document.form1.submit();"><p>柳功权柳体</p></td></tr></tbody></table></li>  
+			  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/1(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;71.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r5.gif" title="舒同毛笔字体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;71.ttf&#39;;document.form1.submit();"><p>舒同毛笔字体</p></td></tr></tbody></table></li>
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/10(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;61.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r10.gif" title="米芾体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;61.ttf&#39;;document.form1.submit();"><p>米芾体</p></td></tr></tbody></table></li>		  
+			  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/7(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m27.ttf&#39;;document.form1.submit();"></td> <td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r7.gif" title="启功毛笔字" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m27.ttf&#39;;document.form1.submit();"><p>启功体</p></td></tr></tbody></table></li>
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/6(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m2a.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r8.gif" title="颜真卿书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m2a.ttf&#39;;document.form1.submit();"><p>颜真卿书法</p></td></tr></tbody></table></li>	   
+			  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/9(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;f4.otf&#39;;document.form1.submit();"></td> <td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r9.gif" title="赵孟頫毛笔楷书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;f4.otf&#39;;document.form1.submit();"><p>赵孟頫楷书</p></td></tr></tbody></table></li>	
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/3(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;73.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r6.gif" title="于右任书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;73.ttf&#39;;document.form1.submit();"><p>于右任书法</p></td></tr></tbody></table></li>     
+			  <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/11(1).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m29.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/r11.gif" title="书体坊禚效锋行草体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m29.ttf&#39;;document.form1.submit();"><p>禚效锋行草</p></td></tr></tbody></table></li>
+        <li><table><tbody><tr><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/fyzt.png" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;fyzt.ttf&#39;;document.form1.submit();"></td><td><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/fyzt(1).png" title="范文强燕赵体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;fyzt.ttf&#39;;document.form1.submit();"><p>范文强燕赵体</p></td></tr></tbody></table></li>	 
+		</ul></div><div style="clear:both"></div>
+<div class="b1">毛笔字体列表</div>
+<div class="fenlei1"><ul>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b120.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b120.ttf&#39;;document.form1.submit();"><p>汉仪毛笔隶书繁</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b121.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b121.ttf&#39;;document.form1.submit();"><p>汉仪毛笔字清茶体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b122.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b122.ttf&#39;;document.form1.submit();"><p>汉仪趣报书法字</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b123.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b123.ttf&#39;;document.form1.submit();"><p>汉仪尚巍流云书法体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b124.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b124.ttf&#39;;document.form1.submit();"><p>汉仪孙万民毛笔草书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b125.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b125.ttf&#39;;document.form1.submit();"><p>默陌老屋手迹</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b126.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b126.ttf&#39;;document.form1.submit();"><p>默陌山魂手迹</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b127.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b127.ttf&#39;;document.form1.submit();"><p>腾祥伯当毛笔字行书</p></li>		
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b111.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b111.ttf&#39;;document.form1.submit();"><p>汉仪苏泽立行楷</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b112.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b112.ttf&#39;;document.form1.submit();"><p>圆润露锋芒</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b113.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b113.ttf&#39;;document.form1.submit();"><p>李太平根隶书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b114.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b114.ttf&#39;;document.form1.submit();"><p>学贞简帛体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b115.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b115.ttf&#39;;document.form1.submit();"><p>颜世举隶书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b116.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b116.ttf&#39;;document.form1.submit();"><p>张士超魏碑</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/a118.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a118.ttf&#39;;document.form1.submit();"><p>黄庭坚书法</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/a119.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a119.ttf&#39;;document.form1.submit();"><p>电影海报字体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/a120.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a120.ttf&#39;;document.form1.submit();"><p>建刚楚楷简</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/1(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a111.ttf&#39;;document.form1.submit();"><p>长江行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/2(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a112.ttf&#39;;document.form1.submit();"><p>刘鑫标体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/3(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a113.ttf&#39;;document.form1.submit();"><p>潮字社杨肖清书简</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/4(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a114.ttf&#39;;document.form1.submit();"><p>汉仪二码墨书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/5(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a115.ttf&#39;;document.form1.submit();"><p>尚魏手书体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/6(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a116.ttf&#39;;document.form1.submit();"><p>张乃仁毛笔行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/7(2).gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;a117.ttf&#39;;document.form1.submit();"><p>写意水墨</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/8(2).gif" title="启笛简" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m5.ttf&#39;;document.form1.submit();"><p>启笛简体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/9(2).gif" title="田氏颜体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m2a.ttf&#39;;document.form1.submit();"><p>田氏颜体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/10(2).gif" title="书体坊兰亭体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;lt.ttf&#39;;document.form1.submit();"><p>书体坊兰亭体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/11(2).gif" title="彦晨清酒" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m6.ttf&#39;;document.form1.submit();"><p>彦晨清酒</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/12(1).gif" title="毛笔字楷书书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m14.ttf&#39;;document.form1.submit();"><p>毛笔楷书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/13(1).gif" title="毛笔草书毛笔" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m9.ttf&#39;;document.form1.submit();"><p>草书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/14(1).gif" title="米芾体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;61.ttf&#39;;document.form1.submit();"><p>米芾体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/16(1).gif" title="向佳红毛笔书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m30.ttf&#39;;document.form1.submit();"><p>向佳红</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/15(1).gif" title="山魂毛笔字田字格" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m24.ttf&#39;;document.form1.submit();"><p>山魂毛笔字田字格</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/17(1).gif" title="禹卫书法隶书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;f3.ttf&#39;;document.form1.submit();"><p>禹卫书法隶书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/18.gif" title="邱氏瘦金书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m13.ttf&#39;;document.form1.submit();"><p>邱氏瘦金书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/19.gif" title="曾正国行楷体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m11.ttf&#39;;document.form1.submit();"><p>曾正国行楷体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/20.gif" title="启体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m27.ttf&#39;;document.form1.submit();"><p>启功体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/21.gif" title="刘书锋太极体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;62.ttf&#39;;document.form1.submit();"><p>刘书锋太极体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/22.gif" title="四海行书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;63.ttf&#39;;document.form1.submit();"><p>四海行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/23.gif" title="书体坊禚效锋行草体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m29.ttf&#39;;document.form1.submit();"><p>书体坊禚效锋行草体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/24.gif" title="潇洒隶书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;67.ttf&#39;;document.form1.submit();"><p>潇洒隶书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/25.gif" title="吕建德" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;68.ttf&#39;;document.form1.submit();"><p>吕建德</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/26.gif" title="钟齐翰墨" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;69.ttf&#39;;document.form1.submit();"><p>钟齐翰墨</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/27.gif" title="苏新诗毛糙体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;64.ttf&#39;;document.form1.submit();"><p>苏新诗毛糙体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/28.gif" title="蔡云汉行书书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m21.ttf&#39;;document.form1.submit();"><p>蔡云汉行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/29.gif" title="蔡云汉清叶书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m22.ttf&#39;;document.form1.submit();"><p>蔡云汉清叶</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/30.gif" title="蔡云汉清悠书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m23.ttf&#39;;document.form1.submit();"><p>蔡云汉清悠</p></li>
+		<li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/31.gif" title="毛笔狂草" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m3.ttf&#39;;document.form1.submit();"><p>毛笔狂草</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/32.gif" title="雪君" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m7.ttf&#39;;document.form1.submit();"><p>雪君</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/33.gif" title="博洋楷书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m8.ttf&#39;;document.form1.submit();"><p>博洋楷书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/34.gif" title="李旭科草书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m4.ttf&#39;;document.form1.submit();"><p>李旭科草书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/35.gif" title="潮字社曾玉波楚风" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m10.ttf&#39;;document.form1.submit();"><p>潮字社曾玉波楚风</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/36.gif" title="良怀行书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m15.ttf&#39;;document.form1.submit();"><p>良怀行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/37.gif" title="蔡云汉天真娃娃书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;70.ttf&#39;;document.form1.submit();"><p>天真娃娃书法</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/38.gif" title="行书书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m17.ttf&#39;;document.form1.submit();"><p>行书书法</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/39.gif" title="铁山楷书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m16.ttf&#39;;document.form1.submit();"><p>铁山楷书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/40.gif" title="韩绍杰邯郸体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m25.ttf&#39;;document.form1.submit();"><p>韩绍杰邯郸体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/41.gif" title="华文行楷" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m26.ttf&#39;;document.form1.submit();"><p>华文行楷</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/42.gif" title="赵孟頫毛笔楷书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;f4.otf&#39;;document.form1.submit();"><p>赵孟頫楷书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/43.gif" title="钟齐志莽行书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m35.ttf&#39;;document.form1.submit();"><p>钟齐志莽行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/44.gif" title="祥隶简体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m36.ttf&#39;;document.form1.submit();"><p>祥隶简体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/45.gif" title="钟齐王庆华" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m34.ttf&#39;;document.form1.submit();"><p>钟齐王庆华</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/46.gif" title="钟齐李洤标准草书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m33.ttf&#39;;document.form1.submit();"><p>钟齐李洤标准草书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/47.gif" title="段宁毛笔行书" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;m37.ttf&#39;;document.form1.submit();"><p>段宁毛笔行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/48.gif" title="汉仪星宇体" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;66.ttf&#39;;document.form1.submit();"><p>汉仪星宇体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/49.gif" title="逐浪报人行书书法" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;brxs.ttf&#39;;document.form1.submit();"><p>逐浪报人行书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b130.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b130.ttf&#39;;document.form1.submit();"><p>北方行书书法字体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b131.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b131.ttf&#39;;document.form1.submit();"><p>禅意雪松体毛笔字</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b132.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b132.ttf&#39;;document.form1.submit();"><p>潮字社曾玉波手书</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b133.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b133.ttf&#39;;document.form1.submit();"><p>潮字社鲲鹏飞白体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b134.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b134.ttf&#39;;document.form1.submit();"><p>潮字社小石飞白书法体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b135.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b135.ttf&#39;;document.form1.submit();"><p>汉仪秦川飞影</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b136.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b136.ttf&#39;;document.form1.submit();"><p>汉仪尚巍卡通毛笔字</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b137.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b137.ttf&#39;;document.form1.submit();"><p>汉仪唐美人</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b138.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b138.ttf&#39;;document.form1.submit();"><p>汉仪新蒂唐朝体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b139.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b139.ttf&#39;;document.form1.submit();"><p>龙书书法体势如破竹</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b140.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b140.ttf&#39;;document.form1.submit();"><p>默陌绿妖毛笔风</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b141.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b141.ttf&#39;;document.form1.submit();"><p>默陌雅诗手迹</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b142.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b142.ttf&#39;;document.form1.submit();"><p>天空之城毛笔书法</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b143.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b143.ttf&#39;;document.form1.submit();"><p>站酷妙典和风体</p></li>
+        <li><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/b144.gif" onclick="document.getElementById(&#39;fonts&#39;).value=&#39;b144.ttf&#39;;document.form1.submit();"><p>字悦毛笔隶书</p></li>
+		</ul>
+</div><div style="clear:both"></div>
+<div class="info">毛笔字是中国传统书法之一，是几千年的历史文化发展而来，对中国文化有着深厚的影响力，毛笔字体丰富多样，练习者众多，毛笔书法是重要的文化传承！毛笔字生成器收录上百款字体，归类整理多位知名书法家字体供大家生成，还可调整大小，设置颜色及背景颜色等。</div>
+<div class="s2"><script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/4.js"></script><p style=" margin-bottom:10px;"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/qm.gif" border="0"></p>
+</div>
+<div class="b1">链接</div>
+<div class="links">
+<p><a href="http://www.akuziti.com/v/pzh.php" target="_blank">庞中华</a> <a href="http://www.akuziti.com/v/lgq.php" target="_blank">柳公权</a> <a href="http://www.akuziti.com/v/yb.php" target="_blank">硬笔</a> <a href="http://www.akuziti.com/v/qg.php" target="_blank">启功</a> <a href="http://www.akuziti.com/v/oyx.php" target="_blank">欧阳询</a> <a href="http://www.akuziti.com/mb/fb.php">飞白体</a> <a href="http://www.akuziti.com/v/sjt.php" target="_blank">瘦金体</a> <a href="http://www.akuziti.com/cs/lb.php" target="_blank">连笔字</a> <a href="http://www.akuziti.com/kt/fuzi.php" target="_blank">福字书法</a> <a href="http://www.akuziti.com/v/xk.php" target="_blank">行楷</a> <a href="http://www.akuziti.com/mb/py.php" target="_blank">拼音毛笔字体</a></p>
+</div>
+</div>
+<div class="right">
+<p><script type="text/javascript" src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/1.js"></script></p><p style=" margin-bottom:10px;"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/q.gif" border="0"></p>
+<p style=" margin-bottom:10px;"><a href="https://ibaotu.com/tupian/ziti/1-1-0-0-0-0-c0-1.html?format_type=0&amp;mrltype=0&amp;spm=akye" target="_blank"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/i3.jpg" border="0"></a></p>
+<p style=" margin-bottom:10px;"><a href="https://ibaotu.com/tupian/ziti/1-1-0-0-0-0-c0-1.html?format_type=0&amp;mrltype=0&amp;spm=akye" target="_blank"><img src="./毛笔字在线生成器 毛笔字体转换器 毛笔书法字体在线转换_files/i4.gif" border="0"></a></p>
+<p></p>
+</div><div style="clear:both"></div>
+</div>
+<div class="bottom">Copy 2017 <a href="http://www.miibeian.gov.cn/" target="_blank">渝ICP备13006626号</a></div>
+
+<div id="bigpicker" class="bigpicker" style="width: 325px; height: 227px; display: none;"><ul class="bigpicker-bgview-text"><li><div id="bigBgshowDiv"></div></li><li><input id="bigHexColorText" size="7" maxlength="7" value="#000000"></li></ul><div id="bigSections" class="bigpicker-sections-color" style="height: 198px; width: 320px;"><ul><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#1C1C1C" style="background-color: #1C1C1C;"></li><li data-color="#383838" style="background-color: #383838;"></li><li data-color="#545454" style="background-color: #545454;"></li><li data-color="#707070" style="background-color: #707070;"></li><li data-color="#8C8C8C" style="background-color: #8C8C8C;"></li><li data-color="#A8A8A8" style="background-color: #A8A8A8;"></li><li data-color="#C4C4C4" style="background-color: #C4C4C4;"></li><li data-color="#FFFFFF" style="background-color: #FFFFFF;"></li><li data-color="#FF0000" style="background-color: #FF0000;"></li><li data-color="#00FF00" style="background-color: #00FF00;"></li><li data-color="#0000FF" style="background-color: #0000FF;"></li><li data-color="#FFFF00" style="background-color: #FFFF00;"></li><li data-color="#00FFFF" style="background-color: #00FFFF;"></li><li data-color="#FF00FF" style="background-color: #FF00FF;"></li><li data-color="#CCFF00" style="background-color: #CCFF00;"></li><li data-color="#9900FF" style="background-color: #9900FF;"></li><li data-color="#66FFFF" style="background-color: rgb(102, 255, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#000000" style="background-color: rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#000000" style="background-color: #000000;"></li><li data-color="#00001C" style="background-color: #00001C;"></li><li data-color="#000038" style="background-color: #000038;"></li><li data-color="#000054" style="background-color: #000054;"></li><li data-color="#000070" style="background-color: #000070;"></li><li data-color="#00008C" style="background-color: #00008C;"></li><li data-color="#0000A8" style="background-color: #0000A8;"></li><li data-color="#0000C4" style="background-color: #0000C4;"></li><li data-color="#0000FF" style="background-color: #0000FF;"></li><li data-color="#990000" style="background-color: #990000;"></li><li data-color="#99001C" style="background-color: #99001C;"></li><li data-color="#990038" style="background-color: #990038;"></li><li data-color="#990054" style="background-color: #990054;"></li><li data-color="#990070" style="background-color: #990070;"></li><li data-color="#99008C" style="background-color: #99008C;"></li><li data-color="#9900A8" style="background-color: #9900A8;"></li><li data-color="#9900C4" style="background-color: #9900C4;"></li><li data-color="#9900FF" style="background-color: rgb(153, 0, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#001C00" style="background-color: #001C00;"></li><li data-color="#001C1C" style="background-color: #001C1C;"></li><li data-color="#001C38" style="background-color: #001C38;"></li><li data-color="#001C54" style="background-color: #001C54;"></li><li data-color="#001C70" style="background-color: #001C70;"></li><li data-color="#001C8C" style="background-color: #001C8C;"></li><li data-color="#001CA8" style="background-color: #001CA8;"></li><li data-color="#001CC4" style="background-color: #001CC4;"></li><li data-color="#001CFF" style="background-color: #001CFF;"></li><li data-color="#991C00" style="background-color: #991C00;"></li><li data-color="#991C1C" style="background-color: #991C1C;"></li><li data-color="#991C38" style="background-color: #991C38;"></li><li data-color="#991C54" style="background-color: #991C54;"></li><li data-color="#991C70" style="background-color: #991C70;"></li><li data-color="#991C8C" style="background-color: #991C8C;"></li><li data-color="#991CA8" style="background-color: #991CA8;"></li><li data-color="#991CC4" style="background-color: #991CC4;"></li><li data-color="#991CFF" style="background-color: rgb(153, 28, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#003800" style="background-color: #003800;"></li><li data-color="#00381C" style="background-color: #00381C;"></li><li data-color="#003838" style="background-color: #003838;"></li><li data-color="#003854" style="background-color: #003854;"></li><li data-color="#003870" style="background-color: #003870;"></li><li data-color="#00388C" style="background-color: #00388C;"></li><li data-color="#0038A8" style="background-color: #0038A8;"></li><li data-color="#0038C4" style="background-color: #0038C4;"></li><li data-color="#0038FF" style="background-color: #0038FF;"></li><li data-color="#993800" style="background-color: #993800;"></li><li data-color="#99381C" style="background-color: #99381C;"></li><li data-color="#993838" style="background-color: #993838;"></li><li data-color="#993854" style="background-color: #993854;"></li><li data-color="#993870" style="background-color: #993870;"></li><li data-color="#99388C" style="background-color: #99388C;"></li><li data-color="#9938A8" style="background-color: #9938A8;"></li><li data-color="#9938C4" style="background-color: #9938C4;"></li><li data-color="#9938FF" style="background-color: rgb(153, 56, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#005400" style="background-color: #005400;"></li><li data-color="#00541C" style="background-color: #00541C;"></li><li data-color="#005438" style="background-color: #005438;"></li><li data-color="#005454" style="background-color: #005454;"></li><li data-color="#005470" style="background-color: #005470;"></li><li data-color="#00548C" style="background-color: #00548C;"></li><li data-color="#0054A8" style="background-color: #0054A8;"></li><li data-color="#0054C4" style="background-color: #0054C4;"></li><li data-color="#0054FF" style="background-color: #0054FF;"></li><li data-color="#995400" style="background-color: #995400;"></li><li data-color="#99541C" style="background-color: #99541C;"></li><li data-color="#995438" style="background-color: #995438;"></li><li data-color="#995454" style="background-color: #995454;"></li><li data-color="#995470" style="background-color: #995470;"></li><li data-color="#99548C" style="background-color: #99548C;"></li><li data-color="#9954A8" style="background-color: #9954A8;"></li><li data-color="#9954C4" style="background-color: #9954C4;"></li><li data-color="#9954FF" style="background-color: rgb(153, 84, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#007000" style="background-color: #007000;"></li><li data-color="#00701C" style="background-color: #00701C;"></li><li data-color="#007038" style="background-color: #007038;"></li><li data-color="#007054" style="background-color: #007054;"></li><li data-color="#007070" style="background-color: #007070;"></li><li data-color="#00708C" style="background-color: #00708C;"></li><li data-color="#0070A8" style="background-color: #0070A8;"></li><li data-color="#0070C4" style="background-color: #0070C4;"></li><li data-color="#0070FF" style="background-color: #0070FF;"></li><li data-color="#997000" style="background-color: #997000;"></li><li data-color="#99701C" style="background-color: #99701C;"></li><li data-color="#997038" style="background-color: #997038;"></li><li data-color="#997054" style="background-color: #997054;"></li><li data-color="#997070" style="background-color: #997070;"></li><li data-color="#99708C" style="background-color: #99708C;"></li><li data-color="#9970A8" style="background-color: #9970A8;"></li><li data-color="#9970C4" style="background-color: #9970C4;"></li><li data-color="#9970FF" style="background-color: rgb(153, 112, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#008C00" style="background-color: #008C00;"></li><li data-color="#008C1C" style="background-color: #008C1C;"></li><li data-color="#008C38" style="background-color: #008C38;"></li><li data-color="#008C54" style="background-color: #008C54;"></li><li data-color="#008C70" style="background-color: #008C70;"></li><li data-color="#008C8C" style="background-color: #008C8C;"></li><li data-color="#008CA8" style="background-color: #008CA8;"></li><li data-color="#008CC4" style="background-color: #008CC4;"></li><li data-color="#008CFF" style="background-color: #008CFF;"></li><li data-color="#998C00" style="background-color: #998C00;"></li><li data-color="#998C1C" style="background-color: #998C1C;"></li><li data-color="#998C38" style="background-color: #998C38;"></li><li data-color="#998C54" style="background-color: #998C54;"></li><li data-color="#998C70" style="background-color: #998C70;"></li><li data-color="#998C8C" style="background-color: #998C8C;"></li><li data-color="#998CA8" style="background-color: #998CA8;"></li><li data-color="#998CC4" style="background-color: #998CC4;"></li><li data-color="#998CFF" style="background-color: rgb(153, 140, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#00A800" style="background-color: #00A800;"></li><li data-color="#00A81C" style="background-color: #00A81C;"></li><li data-color="#00A838" style="background-color: #00A838;"></li><li data-color="#00A854" style="background-color: #00A854;"></li><li data-color="#00A870" style="background-color: #00A870;"></li><li data-color="#00A88C" style="background-color: #00A88C;"></li><li data-color="#00A8A8" style="background-color: #00A8A8;"></li><li data-color="#00A8C4" style="background-color: #00A8C4;"></li><li data-color="#00A8FF" style="background-color: #00A8FF;"></li><li data-color="#99A800" style="background-color: #99A800;"></li><li data-color="#99A81C" style="background-color: #99A81C;"></li><li data-color="#99A838" style="background-color: #99A838;"></li><li data-color="#99A854" style="background-color: #99A854;"></li><li data-color="#99A870" style="background-color: #99A870;"></li><li data-color="#99A88C" style="background-color: #99A88C;"></li><li data-color="#99A8A8" style="background-color: #99A8A8;"></li><li data-color="#99A8C4" style="background-color: #99A8C4;"></li><li data-color="#99A8FF" style="background-color: rgb(153, 168, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#00C400" style="background-color: #00C400;"></li><li data-color="#00C41C" style="background-color: #00C41C;"></li><li data-color="#00C438" style="background-color: #00C438;"></li><li data-color="#00C454" style="background-color: #00C454;"></li><li data-color="#00C470" style="background-color: #00C470;"></li><li data-color="#00C48C" style="background-color: #00C48C;"></li><li data-color="#00C4A8" style="background-color: #00C4A8;"></li><li data-color="#00C4C4" style="background-color: #00C4C4;"></li><li data-color="#00C4FF" style="background-color: #00C4FF;"></li><li data-color="#99C400" style="background-color: #99C400;"></li><li data-color="#99C41C" style="background-color: #99C41C;"></li><li data-color="#99C438" style="background-color: #99C438;"></li><li data-color="#99C454" style="background-color: #99C454;"></li><li data-color="#99C470" style="background-color: #99C470;"></li><li data-color="#99C48C" style="background-color: #99C48C;"></li><li data-color="#99C4A8" style="background-color: #99C4A8;"></li><li data-color="#99C4C4" style="background-color: #99C4C4;"></li><li data-color="#99C4FF" style="background-color: rgb(153, 196, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#00FF00" style="background-color: #00FF00;"></li><li data-color="#00FF1C" style="background-color: #00FF1C;"></li><li data-color="#00FF38" style="background-color: #00FF38;"></li><li data-color="#00FF54" style="background-color: #00FF54;"></li><li data-color="#00FF70" style="background-color: #00FF70;"></li><li data-color="#00FF8C" style="background-color: #00FF8C;"></li><li data-color="#00FFA8" style="background-color: #00FFA8;"></li><li data-color="#00FFC4" style="background-color: #00FFC4;"></li><li data-color="#00FFFF" style="background-color: #00FFFF;"></li><li data-color="#99FF00" style="background-color: #99FF00;"></li><li data-color="#99FF1C" style="background-color: #99FF1C;"></li><li data-color="#99FF38" style="background-color: #99FF38;"></li><li data-color="#99FF54" style="background-color: #99FF54;"></li><li data-color="#99FF70" style="background-color: #99FF70;"></li><li data-color="#99FF8C" style="background-color: #99FF8C;"></li><li data-color="#99FFA8" style="background-color: #99FFA8;"></li><li data-color="#99FFC4" style="background-color: #99FFC4;"></li><li data-color="#99FFFF" style="background-color: rgb(153, 255, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#330000" style="background-color: #330000;"></li><li data-color="#33001C" style="background-color: #33001C;"></li><li data-color="#330038" style="background-color: #330038;"></li><li data-color="#330054" style="background-color: #330054;"></li><li data-color="#330070" style="background-color: #330070;"></li><li data-color="#33008C" style="background-color: #33008C;"></li><li data-color="#3300A8" style="background-color: #3300A8;"></li><li data-color="#3300C4" style="background-color: #3300C4;"></li><li data-color="#3300FF" style="background-color: #3300FF;"></li><li data-color="#CC0000" style="background-color: #CC0000;"></li><li data-color="#CC001C" style="background-color: #CC001C;"></li><li data-color="#CC0038" style="background-color: #CC0038;"></li><li data-color="#CC0054" style="background-color: #CC0054;"></li><li data-color="#CC0070" style="background-color: #CC0070;"></li><li data-color="#CC008C" style="background-color: #CC008C;"></li><li data-color="#CC00A8" style="background-color: #CC00A8;"></li><li data-color="#CC00C4" style="background-color: #CC00C4;"></li><li data-color="#CC00FF" style="background-color: rgb(204, 0, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#331C00" style="background-color: #331C00;"></li><li data-color="#331C1C" style="background-color: #331C1C;"></li><li data-color="#331C38" style="background-color: #331C38;"></li><li data-color="#331C54" style="background-color: #331C54;"></li><li data-color="#331C70" style="background-color: #331C70;"></li><li data-color="#331C8C" style="background-color: #331C8C;"></li><li data-color="#331CA8" style="background-color: #331CA8;"></li><li data-color="#331CC4" style="background-color: #331CC4;"></li><li data-color="#331CFF" style="background-color: #331CFF;"></li><li data-color="#CC1C00" style="background-color: #CC1C00;"></li><li data-color="#CC1C1C" style="background-color: #CC1C1C;"></li><li data-color="#CC1C38" style="background-color: #CC1C38;"></li><li data-color="#CC1C54" style="background-color: #CC1C54;"></li><li data-color="#CC1C70" style="background-color: #CC1C70;"></li><li data-color="#CC1C8C" style="background-color: #CC1C8C;"></li><li data-color="#CC1CA8" style="background-color: #CC1CA8;"></li><li data-color="#CC1CC4" style="background-color: #CC1CC4;"></li><li data-color="#CC1CFF" style="background-color: rgb(204, 28, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#333800" style="background-color: #333800;"></li><li data-color="#33381C" style="background-color: #33381C;"></li><li data-color="#333838" style="background-color: #333838;"></li><li data-color="#333854" style="background-color: #333854;"></li><li data-color="#333870" style="background-color: #333870;"></li><li data-color="#33388C" style="background-color: #33388C;"></li><li data-color="#3338A8" style="background-color: #3338A8;"></li><li data-color="#3338C4" style="background-color: #3338C4;"></li><li data-color="#3338FF" style="background-color: #3338FF;"></li><li data-color="#CC3800" style="background-color: #CC3800;"></li><li data-color="#CC381C" style="background-color: #CC381C;"></li><li data-color="#CC3838" style="background-color: #CC3838;"></li><li data-color="#CC3854" style="background-color: #CC3854;"></li><li data-color="#CC3870" style="background-color: #CC3870;"></li><li data-color="#CC388C" style="background-color: #CC388C;"></li><li data-color="#CC38A8" style="background-color: #CC38A8;"></li><li data-color="#CC38C4" style="background-color: #CC38C4;"></li><li data-color="#CC38FF" style="background-color: rgb(204, 56, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#335400" style="background-color: #335400;"></li><li data-color="#33541C" style="background-color: #33541C;"></li><li data-color="#335438" style="background-color: #335438;"></li><li data-color="#335454" style="background-color: #335454;"></li><li data-color="#335470" style="background-color: #335470;"></li><li data-color="#33548C" style="background-color: #33548C;"></li><li data-color="#3354A8" style="background-color: #3354A8;"></li><li data-color="#3354C4" style="background-color: #3354C4;"></li><li data-color="#3354FF" style="background-color: #3354FF;"></li><li data-color="#CC5400" style="background-color: #CC5400;"></li><li data-color="#CC541C" style="background-color: #CC541C;"></li><li data-color="#CC5438" style="background-color: #CC5438;"></li><li data-color="#CC5454" style="background-color: #CC5454;"></li><li data-color="#CC5470" style="background-color: #CC5470;"></li><li data-color="#CC548C" style="background-color: #CC548C;"></li><li data-color="#CC54A8" style="background-color: #CC54A8;"></li><li data-color="#CC54C4" style="background-color: #CC54C4;"></li><li data-color="#CC54FF" style="background-color: rgb(204, 84, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#337000" style="background-color: #337000;"></li><li data-color="#33701C" style="background-color: #33701C;"></li><li data-color="#337038" style="background-color: #337038;"></li><li data-color="#337054" style="background-color: #337054;"></li><li data-color="#337070" style="background-color: #337070;"></li><li data-color="#33708C" style="background-color: #33708C;"></li><li data-color="#3370A8" style="background-color: #3370A8;"></li><li data-color="#3370C4" style="background-color: #3370C4;"></li><li data-color="#3370FF" style="background-color: #3370FF;"></li><li data-color="#CC7000" style="background-color: #CC7000;"></li><li data-color="#CC701C" style="background-color: #CC701C;"></li><li data-color="#CC7038" style="background-color: #CC7038;"></li><li data-color="#CC7054" style="background-color: #CC7054;"></li><li data-color="#CC7070" style="background-color: #CC7070;"></li><li data-color="#CC708C" style="background-color: #CC708C;"></li><li data-color="#CC70A8" style="background-color: #CC70A8;"></li><li data-color="#CC70C4" style="background-color: #CC70C4;"></li><li data-color="#CC70FF" style="background-color: rgb(204, 112, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#338C00" style="background-color: #338C00;"></li><li data-color="#338C1C" style="background-color: #338C1C;"></li><li data-color="#338C38" style="background-color: #338C38;"></li><li data-color="#338C54" style="background-color: #338C54;"></li><li data-color="#338C70" style="background-color: #338C70;"></li><li data-color="#338C8C" style="background-color: #338C8C;"></li><li data-color="#338CA8" style="background-color: #338CA8;"></li><li data-color="#338CC4" style="background-color: #338CC4;"></li><li data-color="#338CFF" style="background-color: #338CFF;"></li><li data-color="#CC8C00" style="background-color: #CC8C00;"></li><li data-color="#CC8C1C" style="background-color: #CC8C1C;"></li><li data-color="#CC8C38" style="background-color: #CC8C38;"></li><li data-color="#CC8C54" style="background-color: #CC8C54;"></li><li data-color="#CC8C70" style="background-color: #CC8C70;"></li><li data-color="#CC8C8C" style="background-color: #CC8C8C;"></li><li data-color="#CC8CA8" style="background-color: #CC8CA8;"></li><li data-color="#CC8CC4" style="background-color: #CC8CC4;"></li><li data-color="#CC8CFF" style="background-color: rgb(204, 140, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#33A800" style="background-color: #33A800;"></li><li data-color="#33A81C" style="background-color: #33A81C;"></li><li data-color="#33A838" style="background-color: #33A838;"></li><li data-color="#33A854" style="background-color: #33A854;"></li><li data-color="#33A870" style="background-color: #33A870;"></li><li data-color="#33A88C" style="background-color: #33A88C;"></li><li data-color="#33A8A8" style="background-color: #33A8A8;"></li><li data-color="#33A8C4" style="background-color: #33A8C4;"></li><li data-color="#33A8FF" style="background-color: #33A8FF;"></li><li data-color="#CCA800" style="background-color: #CCA800;"></li><li data-color="#CCA81C" style="background-color: #CCA81C;"></li><li data-color="#CCA838" style="background-color: #CCA838;"></li><li data-color="#CCA854" style="background-color: #CCA854;"></li><li data-color="#CCA870" style="background-color: #CCA870;"></li><li data-color="#CCA88C" style="background-color: #CCA88C;"></li><li data-color="#CCA8A8" style="background-color: #CCA8A8;"></li><li data-color="#CCA8C4" style="background-color: #CCA8C4;"></li><li data-color="#CCA8FF" style="background-color: rgb(204, 168, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#33C400" style="background-color: #33C400;"></li><li data-color="#33C41C" style="background-color: #33C41C;"></li><li data-color="#33C438" style="background-color: #33C438;"></li><li data-color="#33C454" style="background-color: #33C454;"></li><li data-color="#33C470" style="background-color: #33C470;"></li><li data-color="#33C48C" style="background-color: #33C48C;"></li><li data-color="#33C4A8" style="background-color: #33C4A8;"></li><li data-color="#33C4C4" style="background-color: #33C4C4;"></li><li data-color="#33C4FF" style="background-color: #33C4FF;"></li><li data-color="#CCC400" style="background-color: #CCC400;"></li><li data-color="#CCC41C" style="background-color: #CCC41C;"></li><li data-color="#CCC438" style="background-color: #CCC438;"></li><li data-color="#CCC454" style="background-color: #CCC454;"></li><li data-color="#CCC470" style="background-color: #CCC470;"></li><li data-color="#CCC48C" style="background-color: #CCC48C;"></li><li data-color="#CCC4A8" style="background-color: #CCC4A8;"></li><li data-color="#CCC4C4" style="background-color: #CCC4C4;"></li><li data-color="#CCC4FF" style="background-color: rgb(204, 196, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#33FF00" style="background-color: #33FF00;"></li><li data-color="#33FF1C" style="background-color: #33FF1C;"></li><li data-color="#33FF38" style="background-color: #33FF38;"></li><li data-color="#33FF54" style="background-color: #33FF54;"></li><li data-color="#33FF70" style="background-color: #33FF70;"></li><li data-color="#33FF8C" style="background-color: #33FF8C;"></li><li data-color="#33FFA8" style="background-color: #33FFA8;"></li><li data-color="#33FFC4" style="background-color: #33FFC4;"></li><li data-color="#33FFFF" style="background-color: #33FFFF;"></li><li data-color="#CCFF00" style="background-color: #CCFF00;"></li><li data-color="#CCFF1C" style="background-color: #CCFF1C;"></li><li data-color="#CCFF38" style="background-color: #CCFF38;"></li><li data-color="#CCFF54" style="background-color: #CCFF54;"></li><li data-color="#CCFF70" style="background-color: #CCFF70;"></li><li data-color="#CCFF8C" style="background-color: #CCFF8C;"></li><li data-color="#CCFFA8" style="background-color: #CCFFA8;"></li><li data-color="#CCFFC4" style="background-color: #CCFFC4;"></li><li data-color="#CCFFFF" style="background-color: rgb(204, 255, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#660000" style="background-color: #660000;"></li><li data-color="#66001C" style="background-color: #66001C;"></li><li data-color="#660038" style="background-color: #660038;"></li><li data-color="#660054" style="background-color: #660054;"></li><li data-color="#660070" style="background-color: #660070;"></li><li data-color="#66008C" style="background-color: #66008C;"></li><li data-color="#6600A8" style="background-color: #6600A8;"></li><li data-color="#6600C4" style="background-color: #6600C4;"></li><li data-color="#6600FF" style="background-color: #6600FF;"></li><li data-color="#FF0000" style="background-color: #FF0000;"></li><li data-color="#FF001C" style="background-color: #FF001C;"></li><li data-color="#FF0038" style="background-color: #FF0038;"></li><li data-color="#FF0054" style="background-color: #FF0054;"></li><li data-color="#FF0070" style="background-color: #FF0070;"></li><li data-color="#FF008C" style="background-color: #FF008C;"></li><li data-color="#FF00A8" style="background-color: #FF00A8;"></li><li data-color="#FF00C4" style="background-color: #FF00C4;"></li><li data-color="#FF00FF" style="background-color: rgb(255, 0, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#661C00" style="background-color: #661C00;"></li><li data-color="#661C1C" style="background-color: #661C1C;"></li><li data-color="#661C38" style="background-color: #661C38;"></li><li data-color="#661C54" style="background-color: #661C54;"></li><li data-color="#661C70" style="background-color: #661C70;"></li><li data-color="#661C8C" style="background-color: #661C8C;"></li><li data-color="#661CA8" style="background-color: #661CA8;"></li><li data-color="#661CC4" style="background-color: #661CC4;"></li><li data-color="#661CFF" style="background-color: #661CFF;"></li><li data-color="#FF1C00" style="background-color: #FF1C00;"></li><li data-color="#FF1C1C" style="background-color: #FF1C1C;"></li><li data-color="#FF1C38" style="background-color: #FF1C38;"></li><li data-color="#FF1C54" style="background-color: #FF1C54;"></li><li data-color="#FF1C70" style="background-color: #FF1C70;"></li><li data-color="#FF1C8C" style="background-color: #FF1C8C;"></li><li data-color="#FF1CA8" style="background-color: #FF1CA8;"></li><li data-color="#FF1CC4" style="background-color: #FF1CC4;"></li><li data-color="#FF1CFF" style="background-color: rgb(255, 28, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#663800" style="background-color: #663800;"></li><li data-color="#66381C" style="background-color: #66381C;"></li><li data-color="#663838" style="background-color: #663838;"></li><li data-color="#663854" style="background-color: #663854;"></li><li data-color="#663870" style="background-color: #663870;"></li><li data-color="#66388C" style="background-color: #66388C;"></li><li data-color="#6638A8" style="background-color: #6638A8;"></li><li data-color="#6638C4" style="background-color: #6638C4;"></li><li data-color="#6638FF" style="background-color: #6638FF;"></li><li data-color="#FF3800" style="background-color: #FF3800;"></li><li data-color="#FF381C" style="background-color: #FF381C;"></li><li data-color="#FF3838" style="background-color: #FF3838;"></li><li data-color="#FF3854" style="background-color: #FF3854;"></li><li data-color="#FF3870" style="background-color: #FF3870;"></li><li data-color="#FF388C" style="background-color: #FF388C;"></li><li data-color="#FF38A8" style="background-color: #FF38A8;"></li><li data-color="#FF38C4" style="background-color: #FF38C4;"></li><li data-color="#FF38FF" style="background-color: rgb(255, 56, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#665400" style="background-color: #665400;"></li><li data-color="#66541C" style="background-color: #66541C;"></li><li data-color="#665438" style="background-color: #665438;"></li><li data-color="#665454" style="background-color: #665454;"></li><li data-color="#665470" style="background-color: #665470;"></li><li data-color="#66548C" style="background-color: #66548C;"></li><li data-color="#6654A8" style="background-color: #6654A8;"></li><li data-color="#6654C4" style="background-color: #6654C4;"></li><li data-color="#6654FF" style="background-color: #6654FF;"></li><li data-color="#FF5400" style="background-color: #FF5400;"></li><li data-color="#FF541C" style="background-color: #FF541C;"></li><li data-color="#FF5438" style="background-color: #FF5438;"></li><li data-color="#FF5454" style="background-color: #FF5454;"></li><li data-color="#FF5470" style="background-color: #FF5470;"></li><li data-color="#FF548C" style="background-color: #FF548C;"></li><li data-color="#FF54A8" style="background-color: #FF54A8;"></li><li data-color="#FF54C4" style="background-color: #FF54C4;"></li><li data-color="#FF54FF" style="background-color: rgb(255, 84, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#667000" style="background-color: #667000;"></li><li data-color="#66701C" style="background-color: #66701C;"></li><li data-color="#667038" style="background-color: #667038;"></li><li data-color="#667054" style="background-color: #667054;"></li><li data-color="#667070" style="background-color: #667070;"></li><li data-color="#66708C" style="background-color: #66708C;"></li><li data-color="#6670A8" style="background-color: #6670A8;"></li><li data-color="#6670C4" style="background-color: #6670C4;"></li><li data-color="#6670FF" style="background-color: #6670FF;"></li><li data-color="#FF7000" style="background-color: #FF7000;"></li><li data-color="#FF701C" style="background-color: #FF701C;"></li><li data-color="#FF7038" style="background-color: #FF7038;"></li><li data-color="#FF7054" style="background-color: #FF7054;"></li><li data-color="#FF7070" style="background-color: #FF7070;"></li><li data-color="#FF708C" style="background-color: #FF708C;"></li><li data-color="#FF70A8" style="background-color: #FF70A8;"></li><li data-color="#FF70C4" style="background-color: #FF70C4;"></li><li data-color="#FF70FF" style="background-color: rgb(255, 112, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#668C00" style="background-color: #668C00;"></li><li data-color="#668C1C" style="background-color: #668C1C;"></li><li data-color="#668C38" style="background-color: #668C38;"></li><li data-color="#668C54" style="background-color: #668C54;"></li><li data-color="#668C70" style="background-color: #668C70;"></li><li data-color="#668C8C" style="background-color: #668C8C;"></li><li data-color="#668CA8" style="background-color: #668CA8;"></li><li data-color="#668CC4" style="background-color: #668CC4;"></li><li data-color="#668CFF" style="background-color: #668CFF;"></li><li data-color="#FF8C00" style="background-color: #FF8C00;"></li><li data-color="#FF8C1C" style="background-color: #FF8C1C;"></li><li data-color="#FF8C38" style="background-color: #FF8C38;"></li><li data-color="#FF8C54" style="background-color: #FF8C54;"></li><li data-color="#FF8C70" style="background-color: #FF8C70;"></li><li data-color="#FF8C8C" style="background-color: #FF8C8C;"></li><li data-color="#FF8CA8" style="background-color: #FF8CA8;"></li><li data-color="#FF8CC4" style="background-color: #FF8CC4;"></li><li data-color="#FF8CFF" style="background-color: rgb(255, 140, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#66A800" style="background-color: #66A800;"></li><li data-color="#66A81C" style="background-color: #66A81C;"></li><li data-color="#66A838" style="background-color: #66A838;"></li><li data-color="#66A854" style="background-color: #66A854;"></li><li data-color="#66A870" style="background-color: #66A870;"></li><li data-color="#66A88C" style="background-color: #66A88C;"></li><li data-color="#66A8A8" style="background-color: #66A8A8;"></li><li data-color="#66A8C4" style="background-color: #66A8C4;"></li><li data-color="#66A8FF" style="background-color: #66A8FF;"></li><li data-color="#FFA800" style="background-color: #FFA800;"></li><li data-color="#FFA81C" style="background-color: #FFA81C;"></li><li data-color="#FFA838" style="background-color: #FFA838;"></li><li data-color="#FFA854" style="background-color: #FFA854;"></li><li data-color="#FFA870" style="background-color: #FFA870;"></li><li data-color="#FFA88C" style="background-color: #FFA88C;"></li><li data-color="#FFA8A8" style="background-color: #FFA8A8;"></li><li data-color="#FFA8C4" style="background-color: #FFA8C4;"></li><li data-color="#FFA8FF" style="background-color: rgb(255, 168, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#66C400" style="background-color: #66C400;"></li><li data-color="#66C41C" style="background-color: #66C41C;"></li><li data-color="#66C438" style="background-color: #66C438;"></li><li data-color="#66C454" style="background-color: #66C454;"></li><li data-color="#66C470" style="background-color: #66C470;"></li><li data-color="#66C48C" style="background-color: #66C48C;"></li><li data-color="#66C4A8" style="background-color: #66C4A8;"></li><li data-color="#66C4C4" style="background-color: #66C4C4;"></li><li data-color="#66C4FF" style="background-color: #66C4FF;"></li><li data-color="#FFC400" style="background-color: #FFC400;"></li><li data-color="#FFC41C" style="background-color: #FFC41C;"></li><li data-color="#FFC438" style="background-color: #FFC438;"></li><li data-color="#FFC454" style="background-color: #FFC454;"></li><li data-color="#FFC470" style="background-color: #FFC470;"></li><li data-color="#FFC48C" style="background-color: #FFC48C;"></li><li data-color="#FFC4A8" style="background-color: #FFC4A8;"></li><li data-color="#FFC4C4" style="background-color: #FFC4C4;"></li><li data-color="#FFC4FF" style="background-color: rgb(255, 196, 255); border-bottom: 1px solid rgb(0, 0, 0);"></li></ul><ul><li data-color="#66FF00" style="background-color: rgb(102, 255, 0); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FF1C" style="background-color: rgb(102, 255, 28); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FF38" style="background-color: rgb(102, 255, 56); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FF54" style="background-color: rgb(102, 255, 84); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FF70" style="background-color: rgb(102, 255, 112); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FF8C" style="background-color: rgb(102, 255, 140); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FFA8" style="background-color: rgb(102, 255, 168); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FFC4" style="background-color: rgb(102, 255, 196); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#66FFFF" style="background-color: rgb(102, 255, 255); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF00" style="background-color: rgb(255, 255, 0); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF1C" style="background-color: rgb(255, 255, 28); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF38" style="background-color: rgb(255, 255, 56); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF54" style="background-color: rgb(255, 255, 84); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF70" style="background-color: rgb(255, 255, 112); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFF8C" style="background-color: rgb(255, 255, 140); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFFA8" style="background-color: rgb(255, 255, 168); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFFC4" style="background-color: rgb(255, 255, 196); border-right: 1px solid rgb(0, 0, 0);"></li><li data-color="#FFFFFF" style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0);"></li></ul></div><div id="bigLayout" class="biglayout"></div></div></body></html>
