@@ -29,8 +29,9 @@ function tijiao(){
 var bn1=document.getElementById('bn1').value;
 var bn2=document.getElementById('bn2').value;
 if(bn1==bn2){alert("两种颜色一样，这样会生成一张纯色图，请改变其中一个颜色再试！");return false;}
-document.form1.submit();	
-
+//document.form1.submit();	
+var fonts1 = $('#fonts').value();	
+$('#word').css('font-family',fonts1);
 }
 function changeColor(newColor,id)
 {
@@ -185,8 +186,8 @@ form { margin-top:10px;}
 <div class="style1"><ul>
 	 <li><span class="mz">字體</span> 
 	 <select name="fonts" id="fonts" onchange="tijiao();">
-<option value="lt.ttf">1.California</option>
-<option value="m2a.ttf" selected="selected">2.书法颜体</option>
+<option value="lt.ttf" selected="selected">1.California</option>
+<option value="m2a.ttf">2.书法颜体</option>
 <option value="m3.ttf">3.毛笔狂草</option>
 <option value="m4.ttf">4.李旭科草书</option>
 <option value="m5.ttf">5.启笛体</option>
