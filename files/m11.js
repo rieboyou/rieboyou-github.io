@@ -1,0 +1,1 @@
+document.writeln("<p style=\' margin-bottom:10px;\'><img src=\'http://www.akuziti.com/wx.gif\' border=\'0\'></p>");

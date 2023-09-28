@@ -1,0 +1,1 @@
+document.writeln("<a href=\'https://ibaotu.com/tupian/yishuzi/6-0-0-0-0-1-c0-1.html?format_type=0&spm=study163\' target=\'_blank\'><img src=\'http://www.akuziti.com/tu/ibao.gif\' border=\'0\'></a>");

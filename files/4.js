@@ -1,0 +1,1 @@
+document.writeln("<p style=\' margin-bottom:10px;\'><img src=\'http://www.akuziti.com/tu/qm.gif\' border=\'0\'></p>");
