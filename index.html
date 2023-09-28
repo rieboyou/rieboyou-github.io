@@ -125,7 +125,8 @@ function tijiao(){
 var bn1=document.getElementById('bn1');
 var bn2=document.getElementById('bn2');
 if(bn1.value=="#FFFFFF" && bn2.value=="#FFFFFF"){bn1.value="#F0F0F0";}
-document.form1.submit();	
+var fonts1 = $('#fonts').val();	
+$('#word').css('font-family',fonts1);
 }
 </script>
 <script type="text/javascript">
