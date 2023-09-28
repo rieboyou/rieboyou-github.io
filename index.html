@@ -97,6 +97,7 @@ var bn2=document.getElementById('bn2').value;
 if(bn1==bn2){alert("两种颜色一样，这样会生成一张纯色图，请改变其中一个颜色再试！");return false;}
 //document.form1.submit();	
 var fonts1 = $('#fonts').val();	
+$('#word').html($('#word2').html())
 $('#word').css('font-family',fonts1);
 $('#word').css('background-color',$('#bn1').val());
 $('#word').css('color',$('#bn2').val());	
@@ -128,6 +129,7 @@ var bn1=document.getElementById('bn1');
 var bn2=document.getElementById('bn2');
 if(bn1.value=="#FFFFFF" && bn2.value=="#FFFFFF"){bn1.value="#F0F0F0";}
 var fonts1 = $('#fonts').val();	
+$('#word').html($('#word2').html())
 $('#word').css('font-family',fonts1);
 $('#word').css('background-color',$('#bn1').val());
 $('#word').css('color',$('#bn2').val());	
@@ -230,7 +232,7 @@ form { margin-top:10px;}
 <h1>車牌產生器</h1>
 <div class="s1"><!--script type="text/javascript" src="./files/3.js"></script><a href="https://ibaotu.com/tupian/yishuzi/6-0-0-0-0-1-c0-1.html?format_type=0&amp;spm=study163" target="_blank"><img src="./files/ibao.gif" border="0"></a-->
 </div>
-<div class="sc"><img id="showImg" src="./files/169587957977405.png"></div>
+<div class="sc"><pre name="word" id="word"></pre></div>
 <div class="s2"><!--script type="text/javascript" src="./files/4.js"></script><p style=" margin-bottom:10px;"><img src="./files/qm.gif" border="0"></p-->
 </div>
 <form name="form1" id="form1" method="post">
@@ -253,7 +255,7 @@ form { margin-top:10px;}
     <dt data-color="#FAAF00" data-background-color="#9F1C03"><img src="./files/13.gif"></dt>
     <dt data-color="#ffffff" data-background-color="#C06D77"><img src="./files/17.gif"></dt>
   </dl></div><div style="clear:both"></div>
-<textarea name="word" id="word" onfocus="if (value ==&#39;請先輸入文字！&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;請先輸入文字！&#39;}">BAV-1707</textarea>
+<textarea name="word" id="word2" onfocus="if (value ==&#39;請先輸入文字！&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;請先輸入文字！&#39;}">BAV-1707</textarea>
 <div class="style1"><ul>
 	 <li><span class="mz">字體</span> 
 	 <select name="fonts" id="fonts" onchange="tijiao();">
