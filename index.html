@@ -97,7 +97,7 @@ var bn2=document.getElementById('bn2').value;
 if(bn1==bn2){alert("两种颜色一样，这样会生成一张纯色图，请改变其中一个颜色再试！");return false;}
 //document.form1.submit();	
 var fonts1 = $('#fonts').val();	
-$('#word>pre').html($('#word2').html())
+$('#wordarea').html($('#word2').html())
 $('#word').css('font-family',fonts1);
 $('#word').css('background-color',$('#bn1').val());
 $('#word').css('color',$('#bn2').val());	
@@ -179,7 +179,10 @@ h1 { font-size:20px; padding-bottom:10px;}
 .b1 { margin:30px 0 10px 0; font-size:16px;}
 .s1 { margin:10px 0 15px 0; text-align:center;}
 .s2 { margin:15px 0; text-align:center;}
-.sc img { border:1px #ddd solid;height: auto;max-width: 100%;}
+.sc { height: 150px;
+    width: 340px;
+    border: 5px solid #ffffff;
+    border-radius: 20px;border:1px #ddd solid;height: auto;max-width: 100%;}
 form {width:96%; padding:20px 2%; background-color:#ebebeb; margin:0 auto;}
 textarea { width:100%; font-size:110px; height:100px; padding:5px 0;overflow-x:hidden;border:1px #cccccc solid;text-indent:10px; margin-top:10px;}
 select { font-size:14px; padding:2px;}
